@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    -webkit-font-smoothing:antialiased;/*نرم‌تر شدن فونت در مک و iOS*/
+    font-family: 'vazirmatn',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+    
+}
+.card{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    gap:16px;
+    width: 280px;
+    padding: 10px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.top .badge{
+    color:red;
+    font-size: 18px;
+    font-weight: 400;
+}
+.top .custom{
+    color: gray;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display:block;
+    object-fit:cover;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.text{
+    align-self: flex-start;
+    text-align: right;
+    font-weight: 300;
+}
+.rat-inv{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center; 
+}
+.inventory{
+    font-size:12px;
+    color:red;
+}
+.rating{
+    align-self: flex-start;
+    display: inline-block;
+    font-weight: 300;
+    flex-direction: row-reverse;
+}
+.rating::after {
+  content: "\2605\2605\2605\2605\2605";  /*پس‌زمینه: ۵ ستاره ی */
+  color: gold;
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.bottum{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 12px;
+}
+.discount{
+    color: #ffffff;
+    background-color: red;
+    border-radius: 12px;
+    padding:0 3px ;
+}
+.totalPrice{
+    align-self:flex-end ;
+    text-decoration: line-through;
+    color: gray;
+    padding-left: 44px;
+}
